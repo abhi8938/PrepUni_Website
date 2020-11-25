@@ -1,0 +1,229 @@
+.first_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inner_child {
+  width: 77%;
+  height: 72vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 11vmin 0vmin 7vmin 0vmin;
+}
+.bubble {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  right: 4vmin;
+}
+
+.first_bubble {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  right: 7vmin;
+}
+.second_bubble {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  right: 3vmin;
+  top: 3vmin;
+}
+.third_bubble {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.second_bubble > text:first-child {
+  margin-top: 2vmin;
+}
+.third_bubble > text:first-child {
+  margin-top: 2vmin;
+}
+.text_in_box {
+  font-family: "Comic Neue", cursive;
+  font-weight: bolder;
+  top: 8.3vmin;
+  margin-left: 5.8vmin;
+  position: absolute;
+  font-size: 2.2vmin;
+  z-index: 2;
+  color: #138808;
+  width: 23vmin;
+}
+.bg_logo {
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  height: 80vmin;
+  z-index: -1;
+  opacity: 0.1;
+}
+.image_container {
+  display: flex;
+  height: 78%;
+  padding-right: 5vmin;
+  /* width: 15%; */
+}
+
+.stu_first_image {
+  height: 25vmin;
+  align-self: flex-end;
+  padding-left: 4vmin;
+}
+.stu_second_image {
+  height: 20vmin;
+  align-self: flex-end;
+  margin-bottom: 4vmin;
+}
+.stu_third_image {
+  height: 25vmin;
+  align-self: flex-end;
+}
+.thought_image_1 {
+  position: absolute;
+  width: 35vmin;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: 32vmin;
+}
+.thought_image_2 {
+  position: absolute;
+  width: 35vmin;
+  height: 32vmin;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.thought_image_3 {
+  position: absolute;
+  width: 31vmin;
+  height: 28vmin;
+  top: 2.3vmin;
+}
+.subtitle {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-size: 3vmin;
+  width: 80%;
+  text-align: center;
+}
+.uni {
+  color: #138808;
+}
+.title {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-size: 8vmin;
+  color: #f3983e;
+}
+.line_image {
+  width: 80%;
+  margin: 2.5vmin 0vmin;
+}
+.section-container {
+  width: 80%;
+  height: 40vh;
+  margin-bottom: 5vmin;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 3vmin;
+}
+
+.body {
+  width: 80%;
+  font-family: "Comic Neue", cursive;
+  font-size: 2.1vmin;
+  line-height: 1.1;
+  font-weight: 400;
+}
+.sub_heading {
+  margin-bottom: 24px;
+  font-size: 4vmin;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #138808;
+  font-family: "Comic Neue", cursive;
+}
+.heading {
+  color: #f3983e;
+  font-size: 3.5vmin;
+  font-weight: 700;
+  font-family: CircularStd;
+  line-height: 25px;
+  margin-bottom: 1.5vmin;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 702px) {
+  .image_container {
+    height: 40vh;
+  }
+}
+.card {
+  width: 45%;
+  border-radius: 25px;
+  box-shadow: 2px 3px rgba(136, 136, 136, 0.2);
+  z-index: 2;
+  background-color: #f7f7f7;
+  align-items: center;
+  padding: 4vmin 2vmin;
+}
+.input_container {
+  display: flex;
+  margin-bottom: 3vmin;
+  width: 90%;
+  flex-direction: column;
+}
+.section_heading {
+  margin-bottom: 1vmin;
+  font-size: 1.8vmin;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #000;
+  font-family: "Comic Neue", cursive;
+}
+.input_text {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  height: 4vmin;
+  padding-left: 2vmin;
+  font-family: "Comic Neue", cursive;
+  font-weight: 500;
+  font-size: 1.6vmin;
+}
+.input_text:focus {
+  outline: none;
+}
+.input_text::placeholder {
+  font-family: "Comic Neue", cursive;
+  font-weight: 500;
+  font-size: 1.6vmin;
+}
+.button {
+  height: 4.5vmin;
+  width: 55%;
+  border-radius: 5px;
+  color: white;
+  background-color: #1e90ff;
+  font-family: "Comic Neue", cursive;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5vmin;
+  font-size: 1.9vmin;
+  border-radius: 5px;
+}
+.l1 {
+  width: 50vmin;
+  height: 40vmin;
+}
