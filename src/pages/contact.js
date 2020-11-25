@@ -47,7 +47,7 @@ const Contact = () => {
   return (
     <div className={"main"}>
       <div className={"row section-container"}>
-        <div className={"col"} style={{ width: "50%" }}>
+        <div className={"col"}>
           <text className={"heading"}>Sound interesting?</text>
           <text className={"sub_heading"}>Sign up for updates!</text>
           <text className={"body"}>{bodyText}</text>

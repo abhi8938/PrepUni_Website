@@ -42,7 +42,7 @@ const Home = () => {
         <div className={"image_container"}>
           <div className={"second_bubble"}>
             <text className={"text_in_box"}>
-              I am short on time, from where should I start preparing?
+              Oh! too much information gathered online, now have to make notes.
             </text>
             <img src={center_bubble} className={"thought_image_2"} />
           </div>
@@ -51,7 +51,7 @@ const Home = () => {
         <div className={"image_container"}>
           <div className={"third_bubble"}>
             <text className={"text_in_box"}>
-              Oh! too much information gathered online, now have to make notes.
+              I am short on time, from where should I start preparing?
             </text>
             <img src={left_bubble} className={"thought_image_3 "} />
           </div>

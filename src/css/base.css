@@ -126,8 +126,7 @@
   margin: 2.5vmin 0vmin;
 }
 .section-container {
-  width: 80%;
-  height: 40vh;
+  width: 90%;
   margin-bottom: 5vmin;
 }
 .row {
@@ -165,8 +164,78 @@
   text-transform: uppercase;
 }
 @media screen and (max-width: 702px) {
+  .card {
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+  }
+  .section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .inner_child {
+    height: 52vh;
+    width: 87%;
+  }
   .image_container {
-    height: 40vh;
+    height: 72%;
+    margin-right: 4vmin;
+  }
+  .thought_image_1 {
+    position: absolute;
+    width: 29vmin;
+    top: 6%;
+    left: 4vmin;
+    height: 28vmin;
+  }
+  .thought_image_2 {
+    width: 30vmin;
+    height: 28vmin;
+    top: 2vmin;
+  }
+
+  .thought_image_3 {
+    width: 25vmin;
+    height: 22vmin;
+    top: 8vmin;
+    left: 3vmin;
+  }
+  .third_bubble > text:first-child {
+    margin-top: 5vmin;
+    font-size: 2vmin;
+    width: 17vmin;
+    left: 2vmin;
+  }
+  .second_bubble > text:first-child {
+    margin-top: 1vmin;
+    font-size: 2vmin;
+    bottom: 0vmin;
+  }
+  .first_bubble {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    right: 7vmin;
+  }
+  .second_bubble {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    right: 3vmin;
+    top: 3vmin;
+  }
+  .third_bubble {
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+  .first_bubble > text:first-child {
+    top: 8.8vmin;
+    left: 3vmin;
+    margin-left: 5.8vmin;
+    position: absolute;
+    font-size: 2.1vmin;
   }
 }
 .card {
