@@ -23,13 +23,16 @@ const Home = () => {
   }, []);
   return (
     <div className="first_container">
+      <div className={"top_name_container"}>
+        <text>Prep</text>
+        <text>Uni</text>
+      </div>
       <img src={center_pic} className={"bg_logo"} />
       <div className={"inner_child"}>
         <div className={"image_container"}>
           <div className={"first_bubble"}>
             <text className={"text_in_box"}>
-              I need study material for my final terms preparation. Where can I
-              find it?
+              Do I have the expected answers? Wish there was a way to confirm.
             </text>
             <img src={right_bubble} className={"thought_image_1 "} />
           </div>
@@ -42,7 +45,7 @@ const Home = () => {
         <div className={"image_container"}>
           <div className={"second_bubble"}>
             <text className={"text_in_box"}>
-              Oh! too much information gathered online, now have to make notes.
+              Is it too late to start now? How can I prioritise?
             </text>
             <img src={center_bubble} className={"thought_image_2"} />
           </div>
@@ -51,7 +54,8 @@ const Home = () => {
         <div className={"image_container"}>
           <div className={"third_bubble"}>
             <text className={"text_in_box"}>
-              I am short on time, from where should I start preparing?
+              My notes are scattered all over the place. I need one reliable
+              source.
             </text>
             <img src={left_bubble} className={"thought_image_3 "} />
           </div>
@@ -59,8 +63,8 @@ const Home = () => {
         </div>
       </div>
       <text className={"subtitle"}>
-        Are you tired of spending hours buying books at different book
-        retailers?!
+        If you've ever had these thoughts, PrepUni is here to cover all the
+        bases.
       </text>
       <img className="l1" src={prepuni_logo} />
       <img className={"line_image"} src={line_png} />

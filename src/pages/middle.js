@@ -35,9 +35,9 @@ const Middle = () => {
 
           <div className="box">
             <text className="center_text">
-              Are you tired of spending hours searching for different study
-              materials useful for finals? PrepUni is coming soon to pass your
-              exam?
+              Are you tired of searching for study material? Is the night before
+              exam too stressful? PrepUni is coming soon to help with your
+              examination anxiety.
             </text>
           </div>
           <div className="middle_slider  middle_bottom">
