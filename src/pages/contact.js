@@ -4,9 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 
-const bodyText = `This coming soon landing page is creative, but also very targeted in
-          its objectives. The doodles at the top are cute,
-          but the copy accompanying them is what really matters. `;
+const bodyText = `Be the first to hear exciting news and updates from us about PrepUni.(Don't worry that's all we'll email you about) `;
 const send_request = async (email, message) => {
   const headers = {
     "Content-Type": "application/json",
@@ -51,6 +49,7 @@ const Contact = () => {
           <text className={"heading"}>Sound interesting?</text>
           <text className={"sub_heading"}>Sign up for updates!</text>
           <text className={"body"}>{bodyText}</text>
+          <text className={"email"}>info@theprepuni.com</text>
         </div>
         <div className={"col card"}>
           <div className={"input_container"}>
@@ -82,6 +81,9 @@ const Contact = () => {
           </button>
         </div>
       </div>
+      <text className={"copyright"}>
+        Copyright Ⓒ 2020 Digital Luxe Services
+      </text>
     </div>
   );
 };

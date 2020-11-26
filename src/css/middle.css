@@ -83,7 +83,7 @@
   font-family: "Comic Neue", cursive;
   font-weight: 700;
   text-align: center;
-  color: #138808;
+  color: #000000;
 }
 
 .box {
@@ -132,6 +132,40 @@
   }
   .inner_container {
     width: 95%;
+  }
+  .right_cont > .fixed_box > .fixed_text {
+    top: 2vmin;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .fixed_image {
+    width: 15vmin;
+    height: 10vmin;
+  }
+  .fixed_text {
+    top: 5.5vmin;
+    font-size: 2.1vmin;
+  }
+  .center_text {
+    font-size: 3vmin;
+  }
+  .fixed_box {
+    height: 20vmin;
+  }
+  .left_cont {
+    height: 272px;
+    padding-top: 1vmin;
+  }
+  .right_cont {
+    height: 262px;
+    padding-top: 3vmin;
+  }
+  .middle_con {
+    height: 285px;
+  }
+  .inner_container {
+    width: 84%;
   }
   .right_cont > .fixed_box > .fixed_text {
     top: 2vmin;
