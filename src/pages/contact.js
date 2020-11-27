@@ -84,6 +84,7 @@ const Contact = () => {
       <text className={"copyright"}>
         Copyright Ⓒ 2020 Digital Luxe Services
       </text>
+      <text className={"copyright"}>All rights reserved</text>
     </div>
   );
 };

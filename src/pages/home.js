@@ -8,7 +8,6 @@ import "../css/base.css";
 import React, { useEffect } from "react";
 
 import center_bubble from "../assets/center_svg.svg";
-import center_pic from "../assets/university_bg.jpg";
 import left_bubble from "../assets/left_bubble.svg";
 import line_png from "../assets/line_png.png";
 import prepuni_logo from "../assets/prepuni_logo.png";
@@ -27,7 +26,7 @@ const Home = () => {
         <text>Prep</text>
         <text>Uni</text>
       </div>
-      <img src={center_pic} className={"bg_logo"} />
+      {/* <img src={center_pic} className={"bg_logo"} /> */}
       <div className={"inner_child"}>
         <div className={"image_container"}>
           <div className={"first_bubble"}>
@@ -42,7 +41,7 @@ const Home = () => {
             className={"stu_first_image"}
           />
         </div>
-        <div className={"image_container"}>
+        {/* <div className={"image_container"}>
           <div className={"second_bubble"}>
             <text className={"text_in_box"}>
               Is it too late to start now? How can I prioritise?
@@ -51,7 +50,7 @@ const Home = () => {
           </div>
           <img src={stu_2} className={"stu_second_image"} />
         </div>
-        <div className={"image_container"}>
+        <div className={"image_container"}> 
           <div className={"third_bubble"}>
             <text className={"text_in_box"}>
               My notes are scattered all over the place. I need one reliable
@@ -61,6 +60,7 @@ const Home = () => {
           </div>
           <img src={stu_3} className={"stu_third_image"} />
         </div>
+        */}
       </div>
       <text className={"subtitle"}>
         If you've ever had these thoughts, PrepUni is here to cover all the
@@ -73,3 +73,8 @@ const Home = () => {
 };
 
 export default Home;
+
+// XR - 254.33px
+// oneplus 6 - 285px
+// iphone 6 - 253px
+// onelus 8 -
