@@ -15,7 +15,7 @@ import programming from "./programming.svg";
 const images = [
   { id: 0, image: accounting, name: "Accounting" },
   { id: 1, image: economic, name: "Economics" },
-  { id: 2, image: english, name: "English" },
+  { id: 2, image: english, name: "Human Resource" },
   { id: 3, image: finance, name: "Finance" },
   { id: 4, image: gst_tax, name: "Gst & Taxation Filling" },
   { id: 5, image: i_business, name: "International Business" },

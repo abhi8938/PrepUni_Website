@@ -1,10 +1,9 @@
-import "../css/base.css";
-
 import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 
-const bodyText = `Be the first to hear exciting news and updates from us about PrepUni.(Don't worry that's all we'll email you about) `;
+const bodyText =
+  "Be the first to hear exciting news and updates from us about PrepUni.";
 const send_request = async (email, message) => {
   const headers = {
     "Content-Type": "application/json",
@@ -49,7 +48,13 @@ const Contact = () => {
           <text className={"heading"}>Sound interesting?</text>
           <text className={"sub_heading"}>Sign up for updates!</text>
           <text className={"body"}>{bodyText}</text>
-          <text className={"email"}>info@theprepuni.com</text>
+          <text className={"body"}>
+            (Don't worry that's all we'll email you about)
+          </text>
+          <text className={"email"}>
+            <span style={{ color: "#f3983e" }}>info@prep</span>
+            uni.in
+          </text>
         </div>
         <div className={"col card"}>
           <div className={"input_container"}>

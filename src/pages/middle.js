@@ -1,5 +1,3 @@
-import "../css/middle.css";
-
 import { Component, useEffect, useState } from "react";
 
 import images from "../assets";
