@@ -5,11 +5,12 @@
  */
 import React, { useEffect } from "react";
 
+import BrandText from "../components/BrandText";
 import line_png from "../assets/line_png.png";
 import prepuni_logo from "../assets/prepuni_logo.png";
-import stu_1 from "../assets/students_svg.svg";
-import stu_2 from "../assets/student_svg.svg";
-import stu_3 from "../assets/student_female.svg";
+import stu_1 from "../assets/left_stu.png";
+import stu_2 from "../assets/test.png";
+import stu_3 from "../assets/right_stu.png";
 
 const Home = () => {
   useEffect(() => {
@@ -22,35 +23,35 @@ const Home = () => {
         <text>Uni</text>
       </div>
       <div className={"inner_child"}>
-        {/* <div className={"image_container"}>
-          <div className={"first_bubble"}>
-            <text className={"text_in_box"}>
+        <div className={"image_container"}>
+          <div className={"bubble"}>
+            <text className={"box_text"}>
               Do I have the expected answers? Wish there was a way to confirm.
             </text>
           </div>
-          <img src={stu_1} className={"stu_first_image"} />
-        </div> */}
-        {/* <div className={"image_container"}>
-          <div className={"second_bubble"}>
-            <text className={"text_in_box"}>
+          <img src={stu_2} className={"stu_image"} />
+        </div>
+        <div className={"image_container"}>
+          <div className={"bubble"}>
+            <text className={"box_text"}>
               Is it too late to start now? How can I prioritise?
             </text>
           </div>
-          <img src={stu_2} className={"stu_second_image"} />
-        </div> */}
-        {/* <div className={"image_container"}>
-          <div className={"third_bubble"}>
-            <text className={"text_in_box"}>
+          <img src={stu_1} className={"stu_image"} />
+        </div>
+        <div className={"image_container"}>
+          <div className={"bubble"}>
+            <text className={"box_text"}>
               My notes are scattered all over the place. I need one reliable
               source.
             </text>
           </div>
-          <img src={stu_3} className={"stu_third_image"} />
-        </div> */}
+          <img src={stu_3} className={"stu_image"} />
+        </div>
       </div>
       <text className={"subtitle"}>
-        If you've ever had these thoughts, PrepUni is here to cover all the
-        bases.
+        If you've ever had these thoughts, <BrandText /> is here to cover all
+        the bases.
       </text>
       <img className="l1" src={prepuni_logo} />
       <img className={"line_image"} src={line_png} />

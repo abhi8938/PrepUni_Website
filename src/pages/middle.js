@@ -1,5 +1,6 @@
 import { Component, useEffect, useState } from "react";
 
+import BrandText from "../components/BrandText";
 import images from "../assets";
 import line_png from "../assets/line_png.png";
 import { render } from "react-dom";
@@ -25,7 +26,7 @@ const Middle = () => {
           <Render_Item name={images[2].name} image={images[2].image} />
         </div>
         <div className="middle_con">
-          <div className="middle_slider middle_top">
+          <div className="middle_slider ">
             <Render_Item name={images[3].name} image={images[3].image} />
             <Render_Item name={images[4].name} image={images[4].image} />
             <Render_Item name={images[5].name} image={images[5].image} />
@@ -34,11 +35,11 @@ const Middle = () => {
           <div className="box">
             <text className="center_text">
               Are you tired of searching for study material? Is the night before
-              exam too stressful? PrepUni is coming soon to help with your
-              examination anxiety.
+              exam too stressful? {<BrandText />} is coming soon to help with
+              your examination anxiety.
             </text>
           </div>
-          <div className="middle_slider  middle_bottom">
+          <div className="middle_slider">
             <Render_Item name={images[10].name} image={images[10].image} />
             <Render_Item name={images[11].name} image={images[11].image} />
             <Render_Item name={images[12].name} image={images[12].image} />

@@ -16,7 +16,7 @@
 .subtitle {
   font-family: "Comic Neue", cursive;
   font-weight: 400;
-  /* font-size: 4vmin; */
+  font-size: calc(0.9rem + 1vw);
   width: 80%;
   text-align: center;
   color: #000000;
@@ -43,7 +43,7 @@
   flex-direction: column;
 }
 .col {
-  width: 95%;
+  width: 96%;
   display: flex;
   flex-direction: column;
   margin: 2vmin 1vmin;
@@ -51,24 +51,25 @@
 .body {
   width: 80%;
   font-family: "Comic Neue", cursive;
-  /* font-size: 2.5vmin; */
   line-height: 1.1;
+  font-size: calc(0.5rem + 1vw);
   font-weight: 400;
-  margin-bottom: 0.2vmin;
+  margin-bottom: calc(0.1rem + 1vw);
 }
 .email {
   width: 80%;
   font-family: "Comic Neue", cursive;
   /* font-size: 3.9vmin; */
   line-height: 1.1;
+  margin-top: (0.5rem + 1vw);
   font-weight: 400;
   margin-bottom: 2vmin;
-  margin-top: 2vmin;
   color: #138808;
+  font-size: calc(0.8rem + 1vw);
 }
 .sub_heading {
-  margin-bottom: 14px;
-  /* font-size: 4vmin; */
+  margin-bottom: calc(0.2em + 1vw);
+  font-size: calc(0.7rem + 2vw);
   line-height: 1.1;
   font-weight: 600;
   color: #138808;
@@ -76,34 +77,35 @@
 }
 .heading {
   color: #f3983e;
-  /* font-size: 4vmin; */
+  font-size: calc(0.7rem + 2vw);
   font-weight: 700;
   font-family: "Comic Neue", cursive;
-  line-height: 25px;
-  margin-bottom: 0.4vmin;
+  line-height: 1.1;
+  margin-bottom: calc(0.1em + 0.5vw);
   text-transform: uppercase;
 }
 .card {
-  height: 160px;
+  height: calc(5vw * 50vh);
+  width: 90%;
   border-radius: 25px;
   box-shadow: 2px 3px rgba(136, 136, 136, 0.2);
   z-index: 2;
   background-color: #f7f7f7;
   align-items: center;
-  padding: 4vmin 2vmin 2vmin 2vmin;
+  padding: calc(2em + 1vw);
 }
 .input_container {
   display: flex;
   margin-bottom: 3vmin;
   width: 90%;
-  height: 26%;
   flex-direction: column;
 }
 .section_heading {
-  margin-bottom: 2vmin;
+  margin-bottom: calc(1em + 1vw);
   /* font-size: 2.5vmin; */
   line-height: 1.1;
   font-weight: 600;
+  font-size: calc(1em + 1vw);
   color: #000;
   font-family: "Comic Neue", cursive;
 }
@@ -111,9 +113,10 @@
   border: 2px solid #ccc;
   border-radius: 5px;
   height: 90%;
-  padding-left: 2vmin;
+  padding: calc(0.1em + 1vw);
   font-family: "Comic Neue", cursive;
   font-weight: 500;
+  font-size: calc(1em + 1vw);
   /* font-size: 2.5vmin; */
 }
 .input_text:focus {
@@ -131,17 +134,16 @@
 .button {
   transition: all 1s;
   cursor: pointer;
-  height: 15%;
   width: 55%;
   border-radius: 5px;
   color: white;
   background-color: #f3983e;
   font-family: "Comic Neue", cursive;
   font-weight: 500;
+  font-size: calc(1em + 1vw);
   justify-content: center;
   align-items: center;
-  padding-top: 0.5vmin;
-  /* font-size: 2.5vmin; */
+  padding: calc(0.1em + 1vw);
   border-radius: 5px;
   border-width: 0px;
   box-shadow: 2px 4px #cccccc;
@@ -150,6 +152,7 @@
   width: 50vmin;
   height: 40vmin;
 }
+
 .top_name_container {
   display: flex;
   flex-direction: row;
@@ -161,48 +164,48 @@
   left: 3vmin;
 }
 .top_name_container > text:first-child {
-  font-size: 4.5vmin;
+  font-size: calc(0.9rem + 2vw);
   line-height: 1.1;
   font-weight: 600;
   color: #f3983e;
   font-family: "Comic Neue", cursive;
 }
 .top_name_container > text:last-child {
-  font-size: 4.5vmin;
+  font-size: calc(0.9rem + 2vw);
   line-height: 1.1;
   font-weight: 600;
   color: #138808;
   font-family: "Comic Neue", cursive;
 }
+
 .copyright {
   position: relative;
-  bottom: 3vmin;
-  margin-bottom: 1vmin;
+
   /* font-size: 2.5vmin; */
   line-height: 1.1;
+  font-size: calc(0.5em + 1vw);
   font-weight: 600;
   color: #000;
   font-family: "Comic Neue", cursive;
-  margin-bottom: 1em;
+  margin-bottom: calc(1rem + 1vw);
 }
+
 /*Main Css*/
 .inner_child {
-  width: 97%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 2%;
-  margin-block-start: 2em;
-  margin-block-end: 1.5em;
-  margin-inline-start: 0px;
+  width: 95%;
+  height: calc(50vw * 50vh);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: calc(2em + 2vw) auto 1px auto;
   position: relative;
-  margin-inline-end: 0px;
   padding-left: 0.5em;
+  /* background-color: #000; */
 }
 .inner_child::before {
   max-width: 100%;
   content: "";
-  background: url("../university_bg.jpg");
+  background: url("../university_bg_s.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,168 +217,99 @@
   z-index: -1;
 }
 .image_container {
-  height: 160px;
-  width: 100%;
-  align-self: flex-end;
-  margin-bottom: 6%;
-  z-index: 1;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: flex-end;
+  align-items: center;
 }
-
-.stu_first_image {
-  height: 50%;
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  margin-inline-end: -0.5em;
-}
-.first_bubble {
+.bubble {
+  max-width: 70%;
+  max-height: 50%;
+  height: 21%;
+  content: "";
   position: relative;
-  width: 100%;
-  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 0.2em;
-}
-.first_bubble::before {
-  max-width: 100%;
-  content: "";
-  background: url("../though_2.svg");
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 50%;
-  overflow: auto;
-  margin: auto;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin-inline-end: 0.5em;
-  background-size: contain;
-  display: block;
-  opacity: 1;
-  /* width: 100%; */
-  /* height: 100%; */
-  position: absolute;
-  z-index: 0;
-}
-.text_in_box {
-  font-family: "Comic Neue", cursive;
-  font-weight: bolder;
-  /* font-size: 0.4em; */
-  display: block;
-  margin-block-start: 1.4em;
+  justify-content: center;
   z-index: 1;
+}
+.image_container:first-child > .bubble {
+  background: url("../though_2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: calc(3em + 3vw);
+}
+.image_container:nth-child(2) > .bubble {
+  background: url("../center_svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: calc(3em + 3vw);
+}
+.image_container:last-child > .bubble {
+  /* background: url("../left_bubble.svg"); */
+  background-color: #f3983e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: calc(4em + 4vw);
+}
+.image_container:last-child > .bubble > .box_text {
+  margin-bottom: calc(1em + 1vw);
+  margin-top: calc(1em + 1vw);
+  margin-left: calc(1em + 1vw);
+  margin-right: calc(0.2em + 1vw);
+}
+.box_text {
+  width: 69%;
+  line-height: 1.1;
+  font-weight: 600;
+  font-size: 1em;
   color: #138808;
-  width: 50%;
+  font-family: "Comic Neue", cursive;
+  margin-bottom: calc(1em + 1vw);
+  margin-left: calc(0.5em + 1vw);
+  margin-right: calc(0.2em + 1vw);
 }
-
-.stu_second_image {
-  height: 43%;
-  display: block;
+.stu_image {
   max-width: 100%;
-  width: 100%;
-  margin-block-end: 0.3em;
-  margin-inline: 0.3em;
+  max-height: 30%;
+  margin-bottom: calc(4em + 3vw);
 }
-.second_bubble {
-  position: relative;
-  width: 100%;
-  height: 47%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-inline-end: -0.5em;
+.brand_text {
+  font-family: "Comic Neue", cursive;
+  line-height: 1.1;
+  font-weight: 400;
+  font-size: calc(0.7em + 1vw);
+  margin: 0;
+  padding: 0;
+  color: #f3983e;
 }
-.second_bubble::before {
-  max-width: 100%;
-  content: "";
-  background: url("../center_svg.svg");
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  opacity: 1;
-  margin-inline-end: 0.1em;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
+@media (orientation: landscape) {
+  .section-container {
+    width: 80%;
+    margin-bottom: calc(3rem + 1vh);
+  }
 }
-.second_bubble > text:first-child {
-  margin-top: 3em;
-  width: 50%;
-  /* font-size: 0.4em; */
-}
-
-.stu_third_image {
-  height: 45%;
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  margin-block-end: 0.3em;
-  margin-inline-end: 0.3em;
-}
-.third_bubble {
-  position: relative;
-  width: 100%;
-  height: 44%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-inline: -1em;
-}
-.third_bubble::before {
-  max-width: 100%;
-  content: "";
-  background: url("../left_bubble.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  opacity: 1;
-  margin-inline-end: 0.4em;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 0;
-}
-.third_bubble > text:first-child {
-  margin-top: 2.5em;
-  /* font-size: 0.4em; */
-  width: 50%;
-}
-
-@media (max-width: 399px) {
+@media (max-width: 722px) {
   .inner_child {
-    width: 90%;
-    height: auto;
-    display: grid;
-    max-height: 300px;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 2em;
-    margin-block-end: 1.5em;
-    margin-inline-start: 0px;
+    width: 95%;
+    height: calc(50vw * 50vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: calc(2em + 2vw) auto 1px auto;
     position: relative;
-    margin-inline-end: 0px;
     padding-left: 0.5em;
-    /* background-color: #cccccc; */
+    /* background-color: #000; */
   }
   .inner_child::before {
     max-width: 100%;
     content: "";
-    background: url("../university_bg.jpg");
+    background: url("../university_bg_s.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,717 +321,92 @@
     z-index: -1;
   }
   .image_container {
-    height: 50%;
-    width: 100%;
-    align-self: center;
-    margin-bottom: 10em;
-    z-index: 1;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: flex-end;
+    align-items: center;
   }
-
-  .stu_first_image {
-    height: 50%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-inline-end: -0.5em;
-  }
-  .first_bubble {
+  .bubble {
+    max-width: 70%;
+    max-height: 50%;
+    height: 21%;
+    content: "";
     position: relative;
-    width: 100%;
-    height: 40%;
+    /* background-color: #cccccc; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 0.2em;
-  }
-  .first_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../though_2.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-inline-end: 0.5em;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 0.3em; */
-    display: block;
-    margin-block-start: 1.4em;
+    justify-content: center;
     z-index: 1;
-    color: #138808;
   }
-
-  .stu_second_image {
-    height: 43%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.3em;
-    margin-inline: 0.3em;
-  }
-  .second_bubble {
-    position: relative;
-    width: 100%;
-    height: 47%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline-end: -0.5em;
-  }
-  .second_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../center_svg.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  .image_container:first-child > .bubble {
+    background: url("../though_2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
-    opacity: 1;
-    margin-inline-end: 0.1em;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
+    margin-right: calc(3em + 3vw);
   }
-  .second_bubble > text:first-child {
-    margin-top: 3.1em;
-    /* width: 50%; */
-    /* font-size: 0.4em; */
+  .image_container:nth-child(2) > .bubble {
+    width: 80%;
+    height: 18%;
+    margin-bottom: calc(-3em + 3vw);
+    /* background: url("../center_svg.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: calc(3em + 3vw);
   }
-
-  .stu_third_image {
-    height: 45%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.3em;
-    margin-inline-end: 0.3em;
-  }
-  .third_bubble {
-    position: relative;
-    width: 100%;
-    height: 44%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: -1em;
-  }
-  .third_bubble::before {
-    max-width: 100%;
-    content: "";
+  .image_container:last-child > .bubble {
     background: url("../left_bubble.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
-    opacity: 1;
-    margin-inline-end: 0.4em;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
+    margin-left: calc(4em + 4vw);
   }
-  .third_bubble > text:first-child {
-    margin-top: 2.5em;
-    /* font-size: 0.35em; */
-    /* width: 50%; */
+  .image_container:last-child > .bubble > .box_text {
+    margin-bottom: calc(1em + 1vw);
+    margin-top: calc(1em + 1vw);
+    margin-left: calc(1em + 1vw);
+    margin-right: calc(0.2em + 1vw);
   }
+  .box_text {
+    width: 69%;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: calc(0.18rem + 1vw);
+    color: #138808;
+    font-family: "Comic Neue", cursive;
+    margin-bottom: calc(1em + 1vw);
+    margin-left: calc(0.5em + 1vw);
+    margin-right: calc(0.2em + 1vw);
+  }
+  .stu_image {
+    max-width: 100%;
+    max-height: 30%;
+    margin-bottom: calc(4em + 3vw);
+  }
+}
 
-  /* contact */
-  .section-container {
-    width: 80%;
-    margin-bottom: 6vmin;
-  }
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-  .col {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    margin: 2vmin 1vmin;
-  }
-  .body {
-    width: 80%;
-    font-family: "Comic Neue", cursive;
-    /* font-size: 2.5vmin; */
-    line-height: 1.1;
-    font-weight: 400;
-  }
-  .email {
-    width: 80%;
-    font-family: "Comic Neue", cursive;
-    /* font-size: 3.9vmin; */
-    line-height: 1.1;
-    font-weight: 400;
-    margin-bottom: 2vmin;
-    color: #138808;
-  }
-  .sub_heading {
-    margin-bottom: 14px;
-    /* font-size: 4vmin; */
-    line-height: 1.1;
-    font-weight: 600;
-    color: #138808;
-    font-family: "Comic Neue", cursive;
-  }
-  .heading {
-    color: #f3983e;
-    /* font-size: 3.5vmin; */
-    font-weight: 700;
-    font-family: "Comic Neue", cursive;
-    line-height: 25px;
-    margin-bottom: 0.4vmin;
-    text-transform: uppercase;
-  }
-  .card {
-    height: 150px;
-    border-radius: 25px;
-    box-shadow: 2px 3px rgba(136, 136, 136, 0.2);
-    z-index: 2;
-    background-color: #f7f7f7;
-    align-items: center;
-    padding: 4vmin 2vmin 2vmin 2vmin;
-  }
-  .input_container {
-    display: flex;
-    margin-bottom: 3vmin;
-    width: 90%;
-    height: 28%;
-    flex-direction: column;
-  }
-  .section_heading {
-    margin-bottom: 2vmin;
-    /* font-size: 2.5vmin; */
-    line-height: 1.1;
-    font-weight: 600;
-    color: #000;
-    font-family: "Comic Neue", cursive;
-  }
-  .input_text {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    height: 90%;
-    padding-left: 2vmin;
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
-    /* font-size: 2.5vmin; */
-  }
-  .input_text:focus {
-    outline: none;
-  }
-  .input_text::placeholder {
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
-    /* font-size: 2vmin; */
-  }
-  .button:hover {
-    box-shadow: 1.5px 3px #cccccc;
-    opacity: 0.8;
-  }
-  .button {
-    transition: all 1s;
-    cursor: pointer;
-    height: 15%;
-    width: 55%;
-    border-radius: 5px;
-    color: white;
-    background-color: #f3983e;
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5vmin;
-    /* font-size: 2.5vmin; */
-    border-radius: 5px;
-    border-width: 0px;
-    box-shadow: 2px 4px #cccccc;
-  }
-  .l1 {
-    width: 50vmin;
-    height: 40vmin;
-  }
-  .top_name_container {
+@media (min-width: 723px) {
+  .inner_child {
+    width: 93%;
+    height: calc(60vw + 5vh);
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    top: 3vmin;
-    left: 3vmin;
-  }
-  .top_name_container > text:first-child {
-    /* font-size: 4vmin; */
-    line-height: 1.1;
-    font-weight: 600;
-    color: #f3983e;
-    font-family: "Comic Neue", cursive;
-  }
-  .top_name_container > text:last-child {
-    /* font-size: 4vmin; */
-    line-height: 1.1;
-    font-weight: 600;
-    color: #138808;
-    font-family: "Comic Neue", cursive;
-  }
-  .copyright {
+    justify-content: space-around;
+    margin: calc(2em + 2vw) auto 1px auto;
     position: relative;
-    bottom: 3vmin;
-    margin-bottom: 1vmin;
-    /* font-size: 2.5vmin; */
-    line-height: 1.1;
-    font-weight: 600;
-    color: #000;
-    font-family: "Comic Neue", cursive;
-    margin-bottom: 1em;
-  }
-}
-
-@media (min-width: 400px) {
-  .inner_child {
-    width: 95%;
-    height: auto;
-    display: grid;
-    max-height: 400px;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 2em;
-    margin-block-end: 1.5em;
-    margin-inline-start: 0px;
-    position: relative;
-    margin-inline-end: 0px;
     padding-left: 0.5em;
-  }
-  .image_container {
-    height: 40%;
-    width: 100%;
-    align-self: flex-start;
-    margin-top: 10em;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  .stu_first_image {
-    height: 50%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-inline: -15px;
-  }
-  .first_bubble {
-    position: relative;
-    width: 100%;
-    height: 48%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-  }
-  .first_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../though_2.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* margin-inline-end: 1em; */
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 7.5px; */
-    display: flex;
-    margin-top: 1.5em;
-    z-index: 1;
-    color: #138808;
-  }
-
-  .stu_second_image {
-    height: 43%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.5em;
-    margin-inline: 15px;
-  }
-  .second_bubble {
-    position: relative;
-    width: 100%;
-    height: 52%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .second_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../center_svg.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.9em;
-    /* font-size: 7.5px; */
-  }
-
-  .stu_third_image {
-    height: 45%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.3em;
-    margin-inline-end: 20px;
-  }
-  .third_bubble {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .third_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../left_bubble.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 3em;
-    /* font-size: 7.5px; */
-    padding-left: 0.7em;
-  }
-  .card {
-    height: 180px;
-  }
-}
-
-@media (min-width: 537px) {
-  .inner_child {
-    width: 97%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 2em;
-    margin-block-end: 1.5em;
-    margin-inline-start: 0px;
-    position: relative;
-    margin-inline-end: 0px;
-    padding-left: 0.5em;
-  }
-  .image_container {
-    height: 50%;
-    width: 100%;
-    align-self: flex-end;
-    margin-bottom: 25%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  .stu_first_image {
-    height: 58%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-inline-end: -1em;
-  }
-  .first_bubble {
-    position: relative;
-    width: 100%;
-    height: 40%;
-  }
-  .first_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../though_2.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* margin-inline-end: 1em; */
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 9.5px; */
-    display: block;
-    margin-block-start: 2em;
-    z-index: 1;
-    color: #138808;
-  }
-
-  .stu_second_image {
-    height: 45%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.8em;
-    margin-inline: 1.2em;
-  }
-  .second_bubble {
-    position: relative;
-    width: 100%;
-    height: 57%;
-  }
-  .second_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../center_svg.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.4em;
-    /* font-size: 10px; */
-    padding-left: 0.5em;
-  }
-
-  .stu_third_image {
-    height: 52%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.3em;
-    margin-inline-end: 1.7em;
-  }
-  .third_bubble {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .third_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../left_bubble.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 3em;
-    /* font-size: 9.2px; */
-    padding-left: 0.7em;
-  }
-}
-
-@media (min-width: 622px) {
-  .inner_child {
-    height: auto;
-  }
-  .image_container {
-    height: 44%;
-    width: 100%;
-    align-self: flex-start;
-    margin-bottom: 15px;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-  .col {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    margin: 2vmin 1vmin;
-  }
-  .card {
-    width: 50%;
-    height: 200px;
-  }
-  .button {
-    transition: all 1s;
-    cursor: pointer;
-    height: 15%;
-    width: 55%;
-    border-radius: 5px;
-    color: white;
-    background-color: #f3983e;
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5vmin;
-    /* font-size: 2.5vmin; */
-    border-radius: 5px;
-    border-width: 0px;
-    box-shadow: 2px 4px #cccccc;
-  }
-  .section_heading {
-    margin-bottom: 1vmin;
-    /* font-size: 2.2vmin; */
-    line-height: 2.3vmin;
-    font-weight: 600;
-    color: #000;
-    font-family: "Comic Neue", cursive;
-  }
-  .body {
-    width: 80%;
-    font-family: "Comic Neue", cursive;
-    /* font-size: 2.2vmin; */
-    line-height: 1.1;
-    font-weight: 400;
-  }
-  .email {
-    width: 80%;
-    font-family: "Comic Neue", cursive;
-    /* font-size: 3.9vmin; */
-    line-height: 1.1;
-    font-weight: 400;
-    margin-bottom: 2vmin;
-    color: #138808;
-  }
-  .sub_heading {
-    margin-bottom: 14px;
-    /* font-size: 3.5vmin; */
-    line-height: 1.1;
-    font-weight: 600;
-    color: #138808;
-    font-family: "Comic Neue", cursive;
-  }
-  .heading {
-    color: #f3983e;
-    /* font-size: 4vmin; */
-    font-weight: 700;
-    font-family: "Comic Neue", cursive;
-    line-height: 25px;
-    margin-bottom: 0.4vmin;
-    text-transform: uppercase;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 11px; */
-    display: block;
-    margin-block-start: 1.5em;
-    margin-left: 1em;
-    z-index: 1;
-    color: #138808;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.4em;
-    /* font-size: 12px; */
-    padding-left: 0.5em;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 3em;
-    /* font-size: 10px; */
-    padding-left: 0.7em;
-  }
-}
-
-@media (max-width: 749px) {
-  .image_container {
-    height: 45%;
-    width: 100%;
-    align-self: center;
-    margin-bottom: 1%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-}
-
-@media (min-width: 750px) {
-  .inner_child {
-    width: 99%;
-    height: auto;
-    display: grid;
-    max-height: 550px;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-inline-start: 0px;
-    position: relative;
-    margin-inline-end: 0px;
-    padding-left: 0.5em;
+    /* background-color: #000; */
   }
   .inner_child::before {
     max-width: 100%;
     content: "";
-    background: url("../university_bg.jpg");
+    background: url("../university_bg_s.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: block;
     opacity: 0.1;
     width: 100%;
@@ -1106,451 +415,91 @@
     z-index: -1;
   }
   .image_container {
-    height: 50%;
-    width: 100%;
-    align-self: center;
-    margin-top: 7%;
-    z-index: 1;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: flex-end;
+    align-items: center;
   }
-
-  .stu_first_image {
-    height: 58%;
-    display: block;
+  .bubble {
     max-width: 100%;
-    width: 100%;
-    margin-inline-end: -1em;
-  }
-  .first_bubble {
-    position: relative;
-    width: 100%;
-    height: 41%;
-  }
-  .first_bubble::before {
-    max-width: 100%;
+    height: 25%;
+    max-height: 50%;
     content: "";
-    background: url("../though_2.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* margin-inline-end: 1em; */
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    margin: auto;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 12.5px; */
-    display: flex;
-    margin-block-start: 2em;
-    margin-left: 1em;
-    z-index: 1;
-    align-self: center;
-    color: #138808;
-  }
-
-  .stu_second_image {
-    height: 45%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.8em;
-    margin-inline: 1.6em;
-  }
-  .second_bubble {
     position: relative;
-    width: 100%;
-    height: 57%;
-  }
-  .second_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../center_svg.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    margin: auto;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.8em;
-    /* font-size: 12.5px; */
-    padding-left: 0.5em;
-  }
-
-  .stu_third_image {
-    height: 52%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.3em;
-    margin-inline-end: 2.1em;
-  }
-  .third_bubble {
-    position: relative;
-    width: 100%;
-    height: 50%;
+    /* background-color: #cccccc; */
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .third_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../left_bubble.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    margin: auto;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 3.4em;
-    /* font-size: 12px; */
-    padding-left: 0.7em;
-  }
-  .button {
-    transition: all 1s;
-    cursor: pointer;
-    height: 17%;
-    width: 55%;
-    border-radius: 5px;
-    color: white;
-    background-color: #f3983e;
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
     justify-content: center;
-    align-items: center;
-    padding-top: 0.5vmin;
-    /* font-size: 2vmin; */
-    border-radius: 5px;
-    border-width: 0px;
-    box-shadow: 2px 4px #cccccc;
-  }
-}
-
-@media (min-width: 863px) {
-  .inner_child {
-    width: 96%;
-    height: auto;
-    max-height: 550px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 1em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    position: relative;
-    margin-inline-end: 0px;
-    padding-left: 0.5em;
-    padding-bottom: 9%;
-  }
-
-  .image_container {
-    height: 49%;
-    width: 100%;
-    align-self: center;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
   }
-
-  .stu_first_image {
-    height: 58%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-inline-end: -1.5em;
+  .image_container:first-child > .bubble {
+    background: url("../though_2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: calc(3.2em + 3vw);
   }
-
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 14px; */
-    display: flex;
-    margin-block-start: 1.5em;
-    z-index: 1;
-    color: #138808;
+  .image_container:nth-child(2) > .bubble {
+    /* background-color: #f3983e; */
+    height: 25%;
+    width: 60%;
+    margin-bottom: calc(-3em + 2vw);
+    background: url("../center_svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: calc(3em + 3vw);
   }
-
-  .stu_second_image {
-    height: 45%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.8em;
-    margin-inline: 2em;
-  }
-  .second_bubble {
-    position: relative;
-    width: 100%;
-    height: 57%;
-  }
-
-  .second_bubble > text:first-child {
-    margin-top: 3.6em;
-    /* font-size: 14px; */
-    padding-left: 0.5em;
-  }
-
-  .stu_third_image {
-    height: 52%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 0.3em;
-    margin-inline-end: 2.1em;
-  }
-  .third_bubble {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .third_bubble::before {
-    max-width: 100%;
-    content: "";
+  .image_container:last-child > .bubble {
     background: url("../left_bubble.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
+    margin-left: calc(4em + 4vw);
   }
-  .third_bubble > text:first-child {
-    margin-top: 3em;
-    /* font-size: 14px; */
-    padding-left: 0.7em;
+  .image_container:last-child > .bubble > .box_text {
+    margin-bottom: calc(1.5em + 2vw);
+    margin-top: calc(1em + 1vw);
+    margin-left: calc(1.5em + 1vw);
+    margin-right: calc(0.5em + 1vw);
   }
-  .card {
-    width: 50%;
-    height: 190px;
-  }
-}
-
-@media (min-width: 981px) {
-  .inner_child {
-    width: 99%;
-    height: auto;
-    display: grid;
-    max-height: 600px;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    position: relative;
-    margin-inline-end: 0px;
-    padding-bottom: 14%;
-    padding-left: 0.5em;
-  }
-  .image_container {
-    height: 54%;
-    width: 100%;
-    align-self: center;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  .stu_first_image {
-    height: 58%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-inline-end: -2em;
-  }
-  .first_bubble {
-    position: relative;
-    width: 100%;
-    height: 35%;
-  }
-  .first_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../though_2.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    /* margin-inline-end: 1em; */
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 0.9em; */
-    display: block;
-    margin-block-start: 1.2em;
-    z-index: 1;
-    color: #138808;
-    width: 40%;
-  }
-
-  .stu_second_image {
-    height: 45%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 1.5em;
-  }
-  .second_bubble {
-    position: relative;
-    width: 100%;
-    height: 45%;
-  }
-  .second_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../center_svg.svg");
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.5em;
-    width: 44%;
-    /* font-size: 0.94em; */
-    padding-left: 0.5em;
-  }
-
-  .stu_third_image {
-    height: 52%;
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    margin-block-end: 1em;
-    /* margin-inline-end: 2.1em; */
-  }
-  .third_bubble {
-    position: relative;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline-end: -2em;
-  }
-  .third_bubble::before {
-    max-width: 100%;
-    content: "";
-    background: url("../left_bubble.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 2.5em;
-    /* font-size: 0.94em; */
-    width: 41%;
-    padding-left: 0.7em;
-  }
-  .card {
-    width: 50%;
-    height: 200px;
-  }
-  .button {
-    transition: all 1s;
-    cursor: pointer;
-    height: 18%;
-    width: 55%;
-    border-radius: 5px;
-    color: white;
-    background-color: #f3983e;
-    font-family: "Comic Neue", cursive;
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5vmin;
-    /* font-size: 2.2vmin; */
-    border-radius: 5px;
-    border-width: 0px;
-    box-shadow: 2px 4px #cccccc;
-  }
-  .section_heading {
-    margin-bottom: 1vmin;
-    /* font-size: 2.2vmin; */
+  .box_text {
+    width: 65%;
     line-height: 1.1;
     font-weight: 600;
-    color: #000;
+    font-size: calc(0.25rem + 1vw);
+    color: #138808;
     font-family: "Comic Neue", cursive;
+    /* margin: auto; */
+    /* margin-top: calc(1.5em + 1vw); */
+  }
+  .stu_image {
+    max-width: 100%;
+    max-height: 30%;
+    margin-bottom: calc(3em + 3vw);
+  }
+}
+
+@media (min-width: 845px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vmin 1vmin;
   }
   .body {
     width: 80%;
     font-family: "Comic Neue", cursive;
-    /* font-size: 2.7vmin; */
     line-height: 1.1;
+    font-size: calc(0.6em + 1vw);
     font-weight: 400;
+    margin-bottom: calc(0.1em + 0.5vw);
   }
   .email {
     width: 80%;
@@ -1559,11 +508,13 @@
     line-height: 1.1;
     font-weight: 400;
     margin-bottom: 2vmin;
+    margin-top: 2vmin;
     color: #138808;
+    font-size: calc(1em + 1vw);
   }
   .sub_heading {
-    margin-bottom: 2vmin;
-    /* font-size: 4vmin; */
+    margin-bottom: 14px;
+    font-size: calc(1.5em + 1vw);
     line-height: 1.1;
     font-weight: 600;
     color: #138808;
@@ -1571,127 +522,264 @@
   }
   .heading {
     color: #f3983e;
-    /* font-size: 4.8vmin; */
-    font-weight: bolder;
+    font-size: calc(1.6em + 1vw);
+    font-weight: 700;
     font-family: "Comic Neue", cursive;
-    line-height: 4vmin;
-    margin-bottom: 1vmin;
+    line-height: 25px;
+    margin-bottom: calc(0.9em +1vw);
     text-transform: uppercase;
   }
-}
-
-@media (min-width: 1200px) {
-  .inner_child {
-    width: 100%;
-    height: auto;
-    display: grid;
-    max-height: 500px;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 3em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    position: relative;
-    margin-inline-end: 0px;
-    padding-left: 0.5em;
-  }
-  .image_container {
-    height: 49%;
-    width: 100%;
-    align-self: flex-start;
-    margin-top: 20%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 2.8em;
-    /* font-size: 18px; */
-    padding-left: 0.7em;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.5em;
-    /* font-size: 18px; */
-    padding-left: 0.5em;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 18px; */
-    display: flex;
-    z-index: 1;
-    color: #138808;
-  }
   .card {
-    width: 38%;
-    height: 210px;
+    /* height: calc(12vw + 10vh); */
+    border-radius: 25px;
+    box-shadow: 2px 3px rgba(136, 136, 136, 0.2);
+    z-index: 2;
+    background-color: #f7f7f7;
+    align-items: center;
+    padding: calc(1em + 1vw) calc(1em + 1vw);
   }
-  .col {
-    padding-left: 2vmin;
+  .input_container {
+    display: flex;
+    margin-bottom: calc(0.5em + 1vw);
+    width: 93%;
+    flex-direction: column;
+  }
+  .section_heading {
+    margin-bottom: calc(0.3em + 0.5vw);
+    /* font-size: 2.5vmin; */
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: calc(0.5em + 1vw);
+    color: #000;
+    font-family: "Comic Neue", cursive;
+  }
+  .input_text {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 90%;
+    padding: calc(0.01em + 1vw);
+    font-family: "Comic Neue", cursive;
+    font-weight: 500;
+    font-size: calc(0.5em + 1vw);
+    /* font-size: 2.5vmin; */
   }
   .button {
     transition: all 1s;
     cursor: pointer;
-    height: 16%;
-    width: 50%;
+    width: 55%;
     border-radius: 5px;
     color: white;
     background-color: #f3983e;
     font-family: "Comic Neue", cursive;
     font-weight: 500;
+    font-size: calc(0.5em + 1vw);
     justify-content: center;
     align-items: center;
-    padding-top: 0.5vmin;
-    /* font-size: 2.2vmin; */
+    padding: calc(0.1em + 0.8vw);
     border-radius: 5px;
     border-width: 0px;
     box-shadow: 2px 4px #cccccc;
   }
 }
-@media (min-width: 1300px) {
+
+@media (min-width: 975px) {
   .inner_child {
-    width: 100%;
-    height: auto;
-    display: grid;
-    max-height: 600px;
-    grid-template-columns: 30% 30% 30%;
-    gap: 2%;
-    margin-block-start: 3em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
+    width: 95%;
+    height: calc(54vw + 4vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: calc(1em + 1vw) auto 0px auto;
     position: relative;
-    margin-inline-end: 0px;
     padding-left: 0.5em;
+    /* background-color: #000; */
   }
-  .image_container {
-    height: 45%;
-    width: 100%;
-    align-self: flex-start;
-    margin-top: 30%;
-    z-index: 1;
+  .stu_image {
+    max-width: 100%;
+    max-height: 30%;
+    margin-bottom: calc(4em + 2vw);
+  }
+  .image_container:last-child > .bubble > .box_text {
+    margin-bottom: calc(1em + 1vw);
+    margin-top: calc(1em + 1vw);
+    margin-left: calc(3.2em + 1vw);
+    margin-right: calc(2em + 1vw);
+  }
+  .image_container:nth-child(2) > .bubble {
+    margin-bottom: calc(-1.1em + 1vw);
+  }
+  .box_text {
+    width: 60%;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: 1em;
+    color: #138808;
+    font-family: "Comic Neue", cursive;
+    margin-bottom: calc(2em + 3vw);
+    margin-top: calc(1.5em + 1vw);
+    margin-left: calc(2em + 2vw);
+    margin-right: calc(1.5em + 1vw);
+  }
+  .bubble {
+    max-width: 70%;
+    max-height: 50%;
+    height: 28%;
+    content: "";
+    position: relative;
+    /* background-color: #cccccc; */
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-  .third_bubble > text:first-child {
-    margin-top: 2.8em;
-    /* font-size: 20px; */
-    padding-left: 0.7em;
-  }
-  .second_bubble > text:first-child {
-    margin-top: 3.5em;
-    /* font-size: 20px; */
-    padding-left: 0.5em;
-  }
-  .text_in_box {
-    font-family: "Comic Neue", cursive;
-    font-weight: bolder;
-    /* font-size: 20px; */
-    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
+  }
+  .body {
+    width: 80%;
+    font-family: "Comic Neue", cursive;
+    line-height: 1.1;
+    font-size: calc(0.4rem + 1vw);
+    font-weight: 400;
+    margin-bottom: calc(0.1em + 0.5vw);
+  }
+  .email {
+    width: 80%;
+    font-family: "Comic Neue", cursive;
+    /* font-size: 3.9vmin; */
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 2vmin;
+    margin-top: 2vmin;
     color: #138808;
+    font-size: calc(0.5em + 1vw);
+  }
+  .sub_heading {
+    margin-bottom: 14px;
+    font-size: calc(1.2em + 1vw);
+    line-height: 1.1;
+    font-weight: 600;
+    color: #138808;
+    font-family: "Comic Neue", cursive;
+  }
+  .heading {
+    color: #f3983e;
+    font-size: calc(1.3em + 1vw);
+    font-weight: 700;
+    font-family: "Comic Neue", cursive;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  .card {
+    /* height: calc(12vw + 10vh); */
+    border-radius: 25px;
+    box-shadow: 2px 3px rgba(136, 136, 136, 0.2);
+    z-index: 2;
+    background-color: #f7f7f7;
+    align-items: center;
+    padding: calc(1em + 1vw) calc(1em + 1vw);
+  }
+  .input_container {
+    display: flex;
+    margin-bottom: calc(0.5em + 1vw);
+    width: 93%;
+    flex-direction: column;
+  }
+  .section_heading {
+    margin-bottom: calc(0.3em + 0.5vw);
+    /* font-size: 2.5vmin; */
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: calc(0.2em + 1vw);
+    color: #000;
+    font-family: "Comic Neue", cursive;
+  }
+  .input_text {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 90%;
+    padding: calc(0.1rem + 0.6vw);
+    font-family: "Comic Neue", cursive;
+    font-weight: 500;
+    font-size: calc(0.3rem + 1vw);
+    /* font-size: 2.5vmin; */
+  }
+  .button {
+    transition: all 1s;
+    cursor: pointer;
+    width: 55%;
+    border-radius: 5px;
+    color: white;
+    background-color: #f3983e;
+    font-family: "Comic Neue", cursive;
+    font-weight: 500;
+    font-size: calc(0.5em + 1vw);
+    justify-content: center;
+    align-items: center;
+    padding: calc(0.1em + 0.5vw);
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 2px 4px #cccccc;
+  }
+  .copyright {
+    position: relative;
+    bottom: calc(1em + 1vw);
+    margin-bottom: 1vmin;
+    /* font-size: 2.5vmin; */
+    line-height: 1.1;
+    font-size: calc(0.1em + 1vw);
+    font-weight: 600;
+    color: #000;
+    font-family: "Comic Neue", cursive;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1249px) {
+  .inner_child {
+    width: 90%;
+    height: calc(45vw + 4vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: calc(2em + 2vw) auto calc(0.5em + 1vw) auto;
+    position: relative;
+    padding-left: 0.5em;
+    /* background-color: #000; */
+  }
+  .box_text {
+    font-size: medium;
+    width: 50%;
+    margin-left: calc(1.5em + 2vw);
+    margin-right: calc(1.5em + 1vw);
+  }
+  .stu_image {
+    max-width: 100%;
+    max-height: 30%;
+    margin-bottom: calc(1em + 1vw);
+  }
+}
+
+@media (min-width: 1318px) {
+  .inner_child {
+    width: 85%;
+    height: calc(42vw + 4vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: calc(1em + 2vw) auto calc(1em + 1vw) auto;
+    position: relative;
+    padding-left: 0.5em;
+    /* background-color: #000; */
+  }
+  .box_text {
+    width: 55%;
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: medium;
+    color: #138808;
+    margin-left: calc(0.5em + 1vw);
+    margin-right: calc(0.2em + 1vw);
+    font-family: "Comic Neue", cursive;
+    /* margin: auto; */
+    margin-top: calc(2em + 1vw);
   }
 }
